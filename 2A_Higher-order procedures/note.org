@@ -1,0 +1,7 @@
+* Higher-order procedures
+** Concept and usage
+1. This kind of procedures are at a higher level of abstraction than usual procedures. The main difference in between is that higher-order procedures receive procedures as their arguments. Therefore, this kind of procedures can be described as a set of procedures.
+** Back to the recursive square root
+1. The comparsion of iteration and recursion. Time complexity and space complexity.
+   1. However, the difficulty is how to rewrite a program from recursion to iteration. (because usually iteration is more efficient than recursion.)
+2. Damp-average

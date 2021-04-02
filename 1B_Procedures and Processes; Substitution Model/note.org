@@ -1,0 +1,10 @@
+* 1B: Procedures and processes; Substitution model
+** Procedures and processes
+1. This part was previously watched and now seems like a introductory concept without much difficulty to understand.
+** Substitution model
+1. Substitution model is, in short, a way of understanding how the computer deals with the code in logic way. How does it substitute the combined procedures into several more primitive procedures.
+2. Substitution is like finding the root of a tree( but the thre with operator and operands). First evaluate the operator to get the procedure. Then (in some certain order) evaluate the operands to get the arguments. Apply the produre to the argument.
+3. The normal order and the applicative order. The normal order would fully expand the procedure and does not evaluate the procedure until the primitive operands and operators are required. The applicative order would evaluate every operands and operator right away, so that the machine can get to the next evaluation body.
+3. The written scripts are in total 3 cases: the first is primitive procedure, with primitive expressions which the details of realizing them are neglected;
+   the second is special procedure which requires different rules to deal, such as Conditional, lambda expression, define expression and so on; the third is combined procedure, which need to break into basic procedures.
+
