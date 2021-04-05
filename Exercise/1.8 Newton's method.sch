@@ -16,4 +16,9 @@
 
 (cube-root 81 4)
 
-;; The 
+;; This exercise just extend the square root procedure into cubic root.
+;; At first, I was confused by the iteration part.
+;; I defined a iteration subprocedure and it doesn't function.
+;; But later I found the error. The main procedure doesn't define any return.
+;; I just defined the procedure but didn't use it.
+;; Next time, I will make myself clearly aware of the definition part and the main procedure part. 

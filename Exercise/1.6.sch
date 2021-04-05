@@ -4,17 +4,18 @@
 
 (define (square x) (* x x))
 (define (average x y) (/ (+ x y) 2))
-(define (sqrt-iter guess x)
-  (define (good-enuf? guess x)
+(define (sqrt-iter x)
+  (define (good-enuf? guess)
      (< (abs (- x (square guess))) 0.01))
-  (define (improve guess x)
+  (define (improve guess)
      (average guess (/ x guess)))
-  (new-if (good-enuf? guess x)
+  (define (iteration guess)
+  (new-if (good-enuf? guess)
         guess
-        (sqrt-iter (improve guess x)
-                 x)))
+        (sqrt-iter (improve guess)
+                 x))))
 
-(sqrt-iter 3 9)
+(sqrt-iter 9)
 
 ;; It seems that the new-if will lead to void output.
 ;; Of course, the original if will function normally, and the output

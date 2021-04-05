@@ -12,3 +12,5 @@
   (try 1))
 
 (square_root 25)
+
+;; This code clearly use the concept of block structure and the free variable in each subprocedure.
