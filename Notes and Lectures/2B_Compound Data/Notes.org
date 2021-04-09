@@ -1,0 +1,20 @@
+* Compound Data
+** Cons, car and cdr
+1. There is a way to construct compound data as long as
+ we can define how such a compund data is constructed and
+ how can we extract each part of the data.
+An example is given to show how such a compound data is constructed:
+ the rational number that is defined as a form of p/q,
+ (p and q are both integer.
+2. Cons, car and cdr are three basic procedures that
+ are used to construct compound data.
+ The cons procedure construct a data object that contains two basic data.
+ The car procedure return the first part of the construction data.
+ The cdr return the seconde(rest) part of the construction data.
+** Data abstraction
+1. This class, the whole lesson itself, wants to tell students that
+ there are no distinguishable difference between data and procedure.
+2. Compoud data is also a kind of abstraction that
+ allows us to ignore some details of dealing with what is inside the data.
+3. At last, it sounds weird that
+ a data like (cons a b) can be constructed as a procedure.
