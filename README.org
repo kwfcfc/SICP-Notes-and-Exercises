@@ -7,7 +7,9 @@ My self learning process of SICP (in MIT Scheme by Emacs)
 ** Environment
 + My environment for exercises code and codes illustrated on lectures is MIT scheme.
 + All the exercises are done in Emacs with extension Geiser.
-  Project link is here.https://github.com/emacsmirror/geiser
+  Project link is here.
+  
+  https://github.com/emacsmirror/geiser
 * SICP： 笔记和练习
 ** 两个部分
 + 这个项目有两个部分。第一部分以课程的名字命名的文件夹，里面包括我的笔记和课堂上的程序。
