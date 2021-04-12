@@ -1,0 +1,120 @@
+\documentclass[utf-8]{article}
+
+\title{Proof of 1.3}
+\author{Aximaris}
+\date{}
+
+\usepackage{amsmath}
+\usepackage[a4paper,left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm]{geometry}
+
+\begin{document}
+\maketitle
+
+In order to prove $Fib(n)$ is the closest integer to
+$\frac{\varphi^n}{\sqrt{5}}$, we need to first prove $Fib(n) =
+\frac{\left(\varphi^n-\psi^n\right)}{\sqrt{5}}$, where
+$\varphi=\frac{1+\sqrt{5}}{2}$ and $\psi=\frac{1-\sqrt{5}}{2}$.
+
+Here is the definition of $Fib(n)$:
+\begin{equation}
+  \label{}
+  Fib(n) =
+  \begin{cases}
+    0 & \mbox{if n = 0,} \\
+    1 & \mbox{if n = 1,} \\
+    Fib(n-1)+Fib(n-2) & \mbox{otherwise.} \\
+  \end{cases}
+\end{equation}
+
+Consider there is a matrix $Q$ that satisfies $Q
+\begin{pmatrix}
+  Fib(n-1) \\
+  Fib(n)   \\
+\end{pmatrix} =
+\begin{pmatrix}
+  Fib(n)   \\
+  Fib(n+1) \\
+\end{pmatrix}
+$. Use the definition above we can easily find such a $Q$, which is to
+solve the equation:
+\[
+Q \begin{pmatrix}
+    Fib(n-1) \\
+    Fib(n)   \\
+  \end{pmatrix}=
+  \begin{pmatrix}
+    Fib(n) \\
+    Fib(n)+Fib(n-1) \\
+  \end{pmatrix}
+\]
+And thus $Q=
+\begin{pmatrix}
+  0 & 1 \\
+  1 & 1 \\
+\end{pmatrix}
+$.
+
+Therefore, for any given interger $n$, the formula $Q^n
+\begin{pmatrix}
+  Fib(0) \\
+  Fib(1) \\
+\end{pmatrix}=
+\begin{pmatrix}
+  Fib(n) \\
+  Fib(n+1) \\
+\end{pmatrix}
+$ will tell us $Fib(n)$. Here $
+\begin{pmatrix}
+  Fib(0) \\
+  Fib(1) \\
+\end{pmatrix}=
+\begin{pmatrix}
+  0 \\
+  1 \\
+\end{pmatrix}
+$.
+
+Our idea is to find two eigen vectors of matrix $Q$, and substitute $
+\begin{pmatrix}
+  0 \\
+  1 \\
+\end{pmatrix}
+$ with the combination of two eigen vectors. Assume they are $v_1
+\mbox{ and } v_2$.
+
+Solve the equation:
+\begin{equation}
+  \label{eq:1}
+  \begin{aligned}
+    Qv &=\lambda v \\
+    (Q-\lambda E)v &= 0 \\
+  \end{aligned}
+\end{equation}
+\begin{equation}
+  \label{eq:2}
+  \begin{aligned}
+    det(Q-\lambda E) &=
+    \begin{vmatrix}
+      -\lambda & 1 \\
+      1 & 1-\lambda \\
+    \end{vmatrix}
+  \end{aligned}
+\end{equation}
+\begin{align*}
+  \lambda(\lambda -1)-1&=0 \\
+  \lambda^2-\lambda-1 &=0 \\
+\end{align*}
+
+So we get $\lambda_1=\frac{1+\sqrt{5}}{2} \mbox{ and }
+\lambda_2=\frac{1-\sqrt{5}}{2}$, which is $\varphi \mbox{ and
+}\psi$. And the corresponding eigen vectors are $v_1=
+\begin{pmatrix}
+  \frac{1+\sqrt{5}}{2} \\
+  \frac{3+\sqrt{5}}{2} \\
+\end{pmatrix} \mbox{ and } v_2=
+\begin{pmatrix}
+  \frac{1-\sqrt{5}}{2} \\
+  \frac{3-\sqrt{5}}{2} \\
+\end{pmatrix}
+$
+\end{document}
