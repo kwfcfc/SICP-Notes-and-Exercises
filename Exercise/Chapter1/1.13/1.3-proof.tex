@@ -74,12 +74,12 @@ $ will tell us $Fib(n)$. Here $
 \end{pmatrix}
 $.
 
-Our idea is to find two eigen vectors of matrix $Q$, and substitute $
+Our idea is to find two eigenvectors of matrix $Q$, and substitute $
 \begin{pmatrix}
   0 \\
   1 \\
 \end{pmatrix}
-$ with the combination of two eigen vectors. Assume they are $v_1
+$ with the combination of two eigenvectors. Assume they are $v_1
 \mbox{ and } v_2$.
 
 Solve the equation:
@@ -107,7 +107,7 @@ Solve the equation:
 
 So we get $\lambda_1=\frac{1+\sqrt{5}}{2} \mbox{ and }
 \lambda_2=\frac{1-\sqrt{5}}{2}$, which is $\varphi \mbox{ and
-}\psi$. And the corresponding eigen vectors are $v_1=
+}\psi$. And the corresponding eigenvectors are $v_1=
 \begin{pmatrix}
   \frac{1+\sqrt{5}}{2} \\
   \frac{3+\sqrt{5}}{2} \\
@@ -116,5 +116,76 @@ So we get $\lambda_1=\frac{1+\sqrt{5}}{2} \mbox{ and }
   \frac{1-\sqrt{5}}{2} \\
   \frac{3-\sqrt{5}}{2} \\
 \end{pmatrix}
+$.
+
+Once the eigenvectors have been set, the initial vector of $Fib(n)$, $
+\begin{pmatrix}
+  0 \\
+  1 \\
+\end{pmatrix}
+$ now can be expressed by the combination of $v_1 \mbox{ and }v_2$.
+But consider a better vector $
+\begin{pmatrix}
+  1 \\
+  1 \\
+\end{pmatrix}= Q
+\begin{pmatrix}
+  0 \\
+  1 \\
+\end{pmatrix}
 $
+and here we get:
+\[
+  \begin{pmatrix}
+    1 \\
+    1 \\
+  \end{pmatrix}=\frac{1}{\sqrt{5}}\left(v_1-v_2\right)
+\]
+
+And thus, we can tell for any given $n$, the $Fib(n)$ will be:
+\begin{align*}
+  \begin{pmatrix}
+    Fib(n)   \\
+    Fib(n+1) \\
+  \end{pmatrix} &= Q^n
+                  \begin{pmatrix}
+                    0 \\
+                    1 \\
+                  \end{pmatrix} \\
+                &= Q^{n-1}
+                  \begin{pmatrix}
+                    1 \\
+                    1 \\
+                  \end{pmatrix} \\
+                &= \frac{1}{\sqrt{5}}\left(\varphi^{n-1}
+                  \begin{pmatrix}
+                   \frac{1+\sqrt{5}}{2} \\
+                   \frac{3+\sqrt{5}}{2} \\
+                  \end{pmatrix} - \psi^{n-1}
+                  \begin{pmatrix}
+                   \frac{1-\sqrt{5}}{2} \\
+                   \frac{3-\sqrt{5}}{2} \\
+                  \end{pmatrix}
+                  \right)
+\end{align*}
+
+Immediately we get $Fib(n)=\frac{\varphi^n-\psi^n}{\sqrt{5}}$.
+Notice that $Fib(n)$ will always be an integer.
+Therefore, if $\frac{1}{\sqrt{5}}\varphi^n < Fib(n)+ \frac{1}{2}$, then the $Fib(n)$ is
+the closest integer to $\varphi^n$.
+
+Notice that
+$\frac{1}{\sqrt{5}}\varphi^n=Fib(n)+\frac{1}{\sqrt{5}}\psi^n$, so all
+we have to do is to prove:
+$$\frac{1}{\sqrt{5}}\psi^n < \frac{1}{2} $$
+
+Clearly,
+\[
+  \frac{1}{\sqrt{5}} < \frac{1}{2} \mbox{ , and }
+  \psi < 1 \mbox{ , which means } \psi^n < 1 \mbox{ too}
+\]
+
+Therefore, $\frac{1}{\sqrt{5}}\psi^n < \frac{1}{2}$ is true.
+
+So our final conclusion is that $Fib(n)$ is the closest integer to $\frac{\varphi^n}{\sqrt{5}}$ .
 \end{document}
