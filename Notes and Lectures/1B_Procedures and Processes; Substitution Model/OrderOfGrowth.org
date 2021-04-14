@@ -1,0 +1,13 @@
+* Order of Growth
+1. Order of growth might be represented as a function that requires input n,
+ and outputs some number represent the resource of time of space
+ required to solve the problem.
+2. Let R(n) be the amount of resources the process
+ requires for a prooblem of size n.
+3. If there are positive constants k1 and k2independent of n:
+ k_1f(n)<= R(n) <= k_2f(n)
+ for *any sufficiently large value of n.* Now we call it R(n)=𝛉(f(n)).
+4. It is just a rough measurement for how the required resources change
+ as the size n grows. Mainly, it's about the largest grower of size n.
+ For instance, the order of growth of a polynomial expression will
+ only rely on the highest power of it.
