@@ -1,8 +1,0 @@
-* Escher Example
-** Convention of list
-1. A way construct compound data was introduced last lesson.
- However, this method only constructs two items.
- Therefore, a convention
- for how to construct compound data with multiple items
- is introduced here. A chain of "cons" which ends with nil,
- each "cons" storing an item.
