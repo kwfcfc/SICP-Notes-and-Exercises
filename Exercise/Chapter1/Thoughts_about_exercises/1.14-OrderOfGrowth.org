@@ -1,0 +1,20 @@
+* How to feel a function's order of growth
+** Find the changing variable, and how the question decreases.
+1. As the whole scale of question increases,
+   we need to find the changing variable.
+   Be it the number of input, or the number of nodes in a graph.
+2. Keep track of how the question decreases in the algorithm.
+   It may be an iteration, or a recursive process.
+   But do be aware of the procedure that is called
+   in every iteration(or recursion) and how its arguments change.
+** From a recursive tree to Order of Growth
+1. In general, a recursive tree is a useful tool to analyze the algorithm.
+  However, it may be confusing to find the order of growth.
+2. My experience is to count the depth of a tree,
+   which will tell the order of growth in space.
+   And the order of growth in time would be indicated by steps of the tree.
+** Mathematical induction and calculation
+1. In essence, the solution to it is a mathematical problem.
+   Use more induction and reasoning to solve the problem.
+   As the book is always emphasizing,
+   to abstract the problem and control the complexity.
