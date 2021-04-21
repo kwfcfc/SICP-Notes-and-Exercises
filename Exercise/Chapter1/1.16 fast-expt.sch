@@ -25,4 +25,4 @@
                            (- n 1)))))
   (iter-expt 1 b n))
 
-(iterative-fast-expt 3 2)
+(iterative-fast-expt 4 4)
