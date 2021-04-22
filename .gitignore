@@ -1,0 +1,7 @@
+#
+# list of ignored files
+# 
+
+# list of LaTeX temporary files when compiling.
+*.log
+*.aux
