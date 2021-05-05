@@ -1,3 +1,6 @@
+;; The result of (search-for-prime 1000 3), you can see that the computer is
+;; so fast to compute that the time required of (prime? 1000) is not measured.
+;; Or maybe it is because of the interpreter.
 ;; result of (search-for-prime 1000 3)
 1009 *** 0.
 1013 *** 0.
@@ -20,6 +23,12 @@
 100043 *** 0.
 ;Value: 100043
 
+;; result of (search-for-prime 1000000 3)
+1 ]=> 
+1000003 *** 1.0000000000000002e-2
+1000033 *** 0.
+1000037 *** 0.
+;Value: 1000037
 
 ;; result of (search-for-prime 1000000000 3)
 1 ]=> 
@@ -28,6 +37,8 @@
 1000000021 *** .03999999999999998
 ;Value: 1000000021
 
+;; Since for such small numbers we cannot know the exact time that the procedure
+;; runs, we have to try larger numbers.
 ;; result of (search-for-prime 10000000000 3)
 1 ]=> 
 10000000019 *** .13
@@ -42,3 +53,10 @@
 100000000019 *** .3900000000000001
 100000000057 *** .39999999999999947
 ;Value: 100000000057
+
+;; result of (search-for-prime 1000000000000 3)
+1 ]=> 
+1000000000039 *** 1.2799999999999994
+1000000000061 *** 1.2699999999999996
+1000000000063 *** .7600000000000016
+;Value: 1000000000063

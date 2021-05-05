@@ -47,14 +47,19 @@
 (search-for-prime 1000 3)
 (search-for-prime 10000 3)
 (search-for-prime 100000 3)
+(search-for-prime 1000000 3)
 
+(search-for-prime 1000000000 3)
+(search-for-prime 10000000000 3)
+(search-for-prime 100000000000 3)
+(search-for-prime 1000000000000 3)
 ;; Respectively, each gives 3 prime number
-;; 1009, 1013, 1019; 10007, 10009, 10037; 100003, 100019
+;; 1009, 1013, 1019; 10007, 10009, 10037; 100003, 100019; 100003, 100019, 100043.
 
 ;; Since my computer(and computer nowadays) is capable of handling much larger
 ;; numbers than 1980s(or even 2000s), the example on the book is not able to
-;; show the O(sqrt(10)) growth. We need to find larger numbers. See 1.22.log.
+;; show the O(sqrt(10)) growth. We need to find larger numbers. See 1.22 output file.
 ;; for the output results the 1e9, 1e10 and 1e11. The time require
-;; for 1e9, 1e10 and 1e11 is approximately 0.043, 0.133 and 0.406, satisfying
+;; for 1e9, 1e10 and 1e11 is approximately 0.04, 0.13 and 0.403, satisfying
 ;; the sqrt(10) growth.(Of course the timing is not accurate,
 ;; error is unavoidable.
