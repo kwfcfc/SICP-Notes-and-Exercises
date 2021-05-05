@@ -1,0 +1,9 @@
+* How to analyze the runtime of a procedure
+** The inaccuracy of runtime
+1. It is quite impossible to find the accurate runtime of a procedure because
+ it is often disturbed by noise, sometimes it is even to 0.1s for
+ each procedure.
+2. A simple way to fight against the random noise is massive tests.
+You can run the timing procedure for 1000 times and average the noise.
+Therefore, for now I haven't design a procedure that return the runtime better
+than just test the runtime for once.
