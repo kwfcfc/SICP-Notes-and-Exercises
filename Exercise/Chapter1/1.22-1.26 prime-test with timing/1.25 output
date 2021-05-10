@@ -1,0 +1,18 @@
+;; 1.25 output comparsion to 1.24
+
+;; The following is 1.24 procedure
+1019 *** 6.0000000000000005e-2
+;Unspecified return value
+
+1 ]=> 
+10037 *** 3.9999999999999994e-2
+;Unspecified return value
+
+1 ]=> 
+100043 *** 3.0000000000000013e-2
+;Unspecified return value
+
+1 ]=> 
+
+1000037 *** .04000000000000001
+;Unspecified return value
