@@ -16,3 +16,18 @@
 
 1000037 *** .04000000000000001
 ;Unspecified return value
+
+;; The following is 1.25 procedure
+2 error> 
+1019 *** 9.999999999999998e-3
+;Unspecified return value
+
+2 error> 
+10037 *** .5
+;Unspecified return value
+
+2 error> 
+100043
+
+ *** 49.49
+;Unspecified return value

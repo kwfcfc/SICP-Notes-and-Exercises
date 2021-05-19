@@ -8,6 +8,21 @@
 (define (expmod base exp m)
   (remainder (fast-expt base exp) m))
 
+;;expand (remainder (fast-expt base exp) m)
+(remainder (cond ((= exp 0) 1)
+                 ((even? n) (square (fast-expt base (/ exp 2))))
+                 (else (* base (fast-expt base (- exp 1)))))
+           m)
+;; Compared to 1.25 backup.scm, it seems that the order of (cond) procedure
+;; and (remainder) procedures matters a lot. The (fast-expt) procedure's order
+;; is first remainder and then (cond) However the backup code is first (cond)
+;; and then (remainder). Of course to glance at the procedure we will know
+;; that the exponential calculation grows surprisingly fast. We know the
+;; calculating order is important.
+;; My explanation is that Alyssa P.Hacker's procedure will run too slowly
+;; because complexity of calculating large exponential number is high.
+;; And procedure 2 will decrease the scale of exponential number.
+
 (define (fermat-test n)
   (define (try-it a)
     (= (expmod a n n) a))
@@ -43,5 +58,3 @@
 ;; procedure. It seems while the fast-prime? only increase slowly as n grows,
 ;; the 1.25 fast-expt? increases faster than n^2.
 ;; Alyssa P.Hacker's procedure won't serve as fast as the fast prime procedure.
-
-;; Reason:

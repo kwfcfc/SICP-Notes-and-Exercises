@@ -14,7 +14,7 @@
 (define (timed-prime-test n)
   (define (start-prime-test n start-time)
     (if (prime? n)
-        (report-prime (- (runtime) start-time));; Notice here if it is normal
+        (report-prime (- (real-time-clock) start-time));; Notice here if it is normal
         ;; application, it will return 0.
         "nothing"));; this part is from codology.net
   ;; And I think it is reasonable, because the timed-prime-procedure itself
@@ -24,7 +24,7 @@
     (display elapsed-time))
   (newline)
   (display n)
-  (start-prime-test n (runtime)))
+  (start-prime-test n (real-time-clock)))
 
 ;; search for primes procedure
 (define (search-for-prime start n)

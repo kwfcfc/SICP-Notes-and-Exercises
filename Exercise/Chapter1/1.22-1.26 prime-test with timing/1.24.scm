@@ -24,7 +24,7 @@
 (define (timed-prime-test n)
   (define (start-prime-test n start-time)
     (if (fast-prime? n 1000)
-        (report-prime (- (runtime) start-time));; Notice here if it is normal
+        (report-prime (- (real-time-clock) start-time));; Notice here if it is normal
         ;; application, it will return 0.
         "nothing"));; this part is from codology.net
   ;; And I think it is reasonable, because the timed-prime-procedure itself
@@ -34,7 +34,7 @@
     (display elapsed-time))
   (newline)
   (display n)
-  (start-prime-test n (runtime)))
+  (start-prime-test n (real-time-clock)))
 
 ;; It computes 1000 times.
 (timed-prime-test 1019)
@@ -50,3 +50,7 @@
 (timed-prime-test 100000000003)
 (timed-prime-test 1000000000039)
 (timed-prime-test 1000000000063)
+;; Notice that here the (runtime) is change by
+;; (real-time-clock), the latter will count in
+;; miliseconds.
+
