@@ -1,0 +1,14 @@
+(smallest-divisor 199)
+(smallest-divisor 1999)
+(smallest-divisor 19999)
+
+;Value: smallest-divisor
+
+1 ]=> 
+;Value: 199
+
+1 ]=> 
+;Value: 1999
+
+1 ]=> 
+;Value: 7

@@ -1,0 +1,20 @@
+(fast-mul-iter 3 2)
+(fast-mul-iter 8 9)
+(fast-mul-iter 7 6)
+(fast-mul-iter 14 23)
+;Value: double
+
+1 ]=> 
+;Value: halve
+
+1 ]=> 
+;Value: even?
+
+1 ]=> 
+;Value: fast-mul-iter
+
+1 ]=> 
+;Value: 6
+
+1 ]=> 
+;Value: 72

@@ -1,0 +1,32 @@
+(display-result Carmichael-number? 561)
+(display-result Carmichael-number? 1105)
+(display-result Carmichael-number? 1729)
+(display-result Carmichael-number? 2465)
+(display-result Carmichael-number? 2821)
+(display-result Carmichael-number? 6601)
+;Value: expmod
+
+1 ]=> 
+;Value: carmichael-number?
+
+1 ]=> 
+;Value: display-result
+
+1 ]=> #t
+;Value: "done"
+
+1 ]=> #t
+;Value: "done"
+
+1 ]=> #t
+;Value: "done"
+
+1 ]=> #t
+;Value: "done"
+
+1 ]=> #t
+;Value: "done"
+
+1 ]=> 
+#t
+;Value: "done"

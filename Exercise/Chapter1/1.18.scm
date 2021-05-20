@@ -26,4 +26,8 @@
            (iterative a (- b 1) (+ a c)))))
       (iterative x y 0))
 ;
+
 (fast-mul-iter 3 2)
+(fast-mul-iter 8 9)
+(fast-mul-iter 7 6)
+(fast-mul-iter 14 23)

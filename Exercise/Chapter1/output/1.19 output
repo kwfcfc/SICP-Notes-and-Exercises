@@ -1,0 +1,9 @@
+(fib 9)
+
+;Value: fib
+
+1 ]=> 
+;Value: fib-iter
+
+1 ]=> 
+;Value: 34
