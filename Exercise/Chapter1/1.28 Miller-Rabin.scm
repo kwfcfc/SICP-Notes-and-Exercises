@@ -2,7 +2,8 @@
   (cond ((= exp 0) 1)
         ((and (= (remainder (square base) m) 1)
               (not (or (= base 1)
-                       (= base (- m 1))))) 0);; The test part could be rewrite into a function.
+                       (= base (- m 1))))) 0)
+;; The test part could be rewrite into a function.
         ((even? exp)
          (remainder
           (square (expmod base (/ exp 2) m))
@@ -12,6 +13,7 @@
           (* base (expmod base (- exp 1) m))
           m))))
 
+;; I actually doubt whehter it is proper to insert the check-test of nontrival squareroot of 1 modulo n into the (expmod)
 (define (miller-rabin-test n)
   (define (try-it a)
     (= (expmod a (- n 1) n) 1))
