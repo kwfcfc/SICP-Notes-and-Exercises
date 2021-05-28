@@ -26,7 +26,7 @@
       0
       (* (/ (- a b) 6.0)
          (+ (f a) (* 4 (f (/ (+ a b) 2.0))) (f b)))))
-  
+
 ;; Test cube and test range
 (define (cube a)
   (* a a a))

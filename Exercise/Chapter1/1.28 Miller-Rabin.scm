@@ -13,7 +13,8 @@
           (* base (expmod base (- exp 1) m))
           m))))
 
-;; I actually doubt whehter it is proper to insert the check-test of nontrival squareroot of 1 modulo n into the (expmod)
+;; I actually doubt whehter it is proper to insert the check-test
+;; of nontrival square root of 1 modulo n into the (expmod)
 (define (miller-rabin-test n)
   (define (try-it a)
     (= (expmod a (- n 1) n) 1))
