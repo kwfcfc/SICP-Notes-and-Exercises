@@ -1,5 +1,5 @@
 ;; Rewrite the sum procedure into iteratively performed procedure?
-(define (sum-recursively term a next b)
+(define (sum-recursion term a next b)
   (if (or (> a b) (= a b))
       0
       (+ (term a)
@@ -9,6 +9,6 @@
 (define (sum-iteration term a next b)
   (define (iter a result)
     (if (or (> a b) (= a b))
-        0
+        result
         (iter (next a) (+ (term a) result))))
   (iter a 0))
