@@ -6,5 +6,3 @@
 
 (define (f x)
   (/ 1 x))
-
-((average-damp f) 4)
