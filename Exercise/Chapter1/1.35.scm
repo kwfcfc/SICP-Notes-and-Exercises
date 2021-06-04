@@ -18,5 +18,5 @@
   (try first-guess))
 
 ;; Now compute the 𝜑.
-(fixed-point (lambda(x) (/ (log 1000) (log x)))
+(fixed-point (lambda(x) (+ 1 (/ 1 x)))
              1.0)
