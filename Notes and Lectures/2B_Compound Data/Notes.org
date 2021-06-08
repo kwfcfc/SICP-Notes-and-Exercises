@@ -18,3 +18,13 @@ An example is given to show how such a compound data is constructed:
  allows us to ignore some details of dealing with what is inside the data.
 3. At last, it sounds weird that
  a data like (cons a b) can be constructed as a procedure.
+** Data and abstraction barriers
+1. There are barriers between how the compoud data is constructed by
+ some more primitive data and how the compound data are used.
+2. Of course, a special kind of compound data can be constructed by
+ a general set of procedures about constructors and selectors *with* specific
+ conditions.
+3. Specific conditions can be attributes of the specific compound data.
+ It can be described as a procedure that only takes one argument as
+ compound data. This a different level other than the construction part levl and
+ applying level.
