@@ -11,7 +11,7 @@
 ;; test using substitution model
 (car (cons 7 6))
 (car (lambda (m) (m 7 6)))
-(lambda (m) (m 7 6) (lambda (p q) p))
+((lambda (m) (m 7 6)) (lambda (p q) p))
 ((lambda (p q) p) 7 6)
 
 ;; Here is the answer.

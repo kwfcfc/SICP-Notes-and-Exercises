@@ -18,5 +18,5 @@
   ((selector 3) z 0))
 
 (car (cons 2 3))
-;; However, this method will perform differen complexity due to the
+;; However, this method will perform different complexity due to the
 ;; input of pairs.
