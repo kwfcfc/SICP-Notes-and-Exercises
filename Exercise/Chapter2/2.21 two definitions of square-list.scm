@@ -25,5 +25,3 @@
 ;; Here is the answer
 (map (lambda (x) (* x x))
      items)
-
-
