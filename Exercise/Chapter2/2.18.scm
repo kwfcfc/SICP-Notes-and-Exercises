@@ -9,7 +9,7 @@
   (define (iter items result)
     (if (null? items)
         result
-        (item (cdr items)
+        (iter (cdr items)
               (cons (car items) result))))
   (iter l ()))
               
