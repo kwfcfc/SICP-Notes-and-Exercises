@@ -12,7 +12,6 @@
   (define  (pi-next x) (+ x 2))
   (product pi-term a pi-next b))
 
-
 (factorial 5)
 (* 4 (pi-product 3 21))
 
