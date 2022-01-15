@@ -5,3 +5,6 @@
 # list of LaTeX temporary files when compiling.
 *.log
 *.aux
+
+# Learning Materials from MIT_OCW
+/MIT_OCW
