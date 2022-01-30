@@ -10,6 +10,9 @@ My self learning process of SICP (in MIT Scheme by Emacs)
   Project link is here.
   
   https://github.com/emacsmirror/geiser
+** Textbook
++ The textbook can be found on the https://ocw.mit.edu website.
++ Full online textbook: https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-38.html.
 * SICP： 笔记和练习
 ** 两个部分
 + 这个项目有两个部分。第一部分以课程的名字命名的文件夹，里面包括我的笔记和课堂上的程序。
@@ -18,3 +21,6 @@ My self learning process of SICP (in MIT Scheme by Emacs)
 + 我的练习和上课展示的代码是用MIT Scheme的实现。
 + 所有的练习都是在Emacs上完成，借助Geiser插件。
   项目链接在此：https://github.com/emacsmirror/geiser
+** 教材
++ 教材来自网站：https://ocw.mit.edu
++ 完整的在线教材：https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-38.html
