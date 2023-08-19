@@ -6,8 +6,10 @@ My self learning process of SICP (in MIT Scheme by Emacs)
 + Second is the exercies, which are somehow most important part of the whole learning process.
 ** Environment
 + My environment for exercises code and codes illustrated on lectures is MIT scheme.
-+ All the exercises are done in Emacs with extension Geiser.
-  Project link is here.
++ Most exercies in chapter 1 and 2 are done in Emacs with extension Geiser.
+  Project link is here./
++ For the rest of the chapter 2 and chapter 3, I use visual studio code, code server and
+  copilot.  
   
   https://github.com/emacsmirror/geiser
 ** Textbook
@@ -19,8 +21,9 @@ My self learning process of SICP (in MIT Scheme by Emacs)
 + 第二部分是练习，也是某种程度上整个学习过程中最重要的一个部分。
 ** 环境
 + 我的练习和上课展示的代码是用MIT Scheme的实现。
-+ 所有的练习都是在Emacs上完成，借助Geiser插件。
++ 前两章大部分的练习都是在Emacs上完成，借助Geiser插件。
   项目链接在此：https://github.com/emacsmirror/geiser
++ 第二、三章的练习借助visual studio code, code server 和 copilot 实现。
 ** 教材
 + 教材来自网站：https://ocw.mit.edu
 + 完整的在线教材：https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-38.html
