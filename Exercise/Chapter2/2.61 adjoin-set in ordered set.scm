@@ -3,4 +3,4 @@
 (define (adjoin-set x set)
   (cond ((< x (car set)) (con x set))
         ((= x (car set)) set)
-        (else (con (car set) (adjoin-set x (cdr set))))))
+        (else (cons (car set) (adjoin-set x (cdr set))))))
